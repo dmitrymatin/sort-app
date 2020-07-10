@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SortApp
 {
-    public partial class Form1 : Form
+    public partial class AppForm : Form
     {
-        public Form1()
+        public AppForm()
         {
             InitializeComponent();
         }
