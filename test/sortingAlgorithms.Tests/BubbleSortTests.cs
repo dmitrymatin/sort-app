@@ -43,7 +43,7 @@ namespace sortingAlgorithms.Tests
         }
 
         [Theory]
-        [InlineData(100)]
+        [InlineData(1000)]
         public void BubbleSortIsFast(int arrSize)
         {
             // arrange
@@ -80,7 +80,7 @@ namespace sortingAlgorithms.Tests
         }
 
         [Theory]
-        [InlineData(100)]
+        [InlineData(10000)]
         public void BubbleSortIsEquallyFastForAllOrders(int arrSize)
         {
             // arrange
