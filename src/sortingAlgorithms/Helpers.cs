@@ -29,6 +29,22 @@ namespace sortingAlgorithms
 
             return minIndex;
         }
+
+        public static int MaxIndex<T>(this IList<T> list, int startIndex, int endIndex, Comparer<T> comparer)
+        {
+            comparer ??= Comparer<T>.Default;
+
+            int maxIndex = startIndex;
+            for (int i = startIndex; i <= endIndex; i++)
+            {
+                if (comparer.Compare(list[i], list[maxIndex]) > 0)
+                {
+                    maxIndex = i;
+                }
+            }
+
+            return maxIndex;
+        }
     }
 
     public enum SortingOrder
