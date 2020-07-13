@@ -9,7 +9,7 @@ namespace sortingAlgorithms.Tests
     {
         [Theory]
         [InlineData(new object[] { new int[] { 6, 5, 3, 1, 8, 7, 2, 4 } })]
-        public void SelectionSortAscendingGivesCorrectOutput(int[] sampleArray)
+        public void SelectionSortAscendingInitialGivesCorrectOutput(int[] sampleArray)
         {
             // arrange
             int[] arrayForSelectionSort = new int[sampleArray.Length];
@@ -23,5 +23,20 @@ namespace sortingAlgorithms.Tests
             Assert.Equal(sampleArray, arrayForSelectionSort);
         }
 
+        [Theory]
+        [InlineData(new object[] { new int[] { 6, 5, 3, 1, 8, 7, 2, 4 } })]
+        public void SelectionSortAscendingGivesCorrectOutput(int[] sampleArray)
+        {
+            // arrange
+            int[] arrayForSelectionSort = new int[sampleArray.Length];
+            sampleArray.CopyTo(arrayForSelectionSort, index: 0);
+
+            // act
+            Array.Sort(sampleArray);
+            arrayForSelectionSort.SelectionSortAscending();
+
+            // assert
+            Assert.Equal(sampleArray, arrayForSelectionSort);
+        }
     }
 }
