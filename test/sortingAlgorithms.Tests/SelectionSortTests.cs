@@ -17,7 +17,7 @@ namespace sortingAlgorithms.Tests
 
             // act
             Array.Sort(sampleArray);
-            arrayForSelectionSort.SelectionSortAscending();
+            arrayForSelectionSort.SelectionSortAscendingInitial();
 
             // assert
             Assert.Equal(sampleArray, arrayForSelectionSort);
