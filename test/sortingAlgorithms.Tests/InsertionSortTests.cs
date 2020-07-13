@@ -25,7 +25,7 @@ namespace sortingAlgorithms.Tests
         }
 
         [Theory]
-        [InlineData(10000)]
+        [InlineData(20000)]
         public void InsertionSortAndBubbleSortAreEquallyFast(int arrBubbleSize)
         {
             // arrange
