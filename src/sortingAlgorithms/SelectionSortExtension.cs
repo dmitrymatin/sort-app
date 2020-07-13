@@ -46,5 +46,24 @@ namespace sortingAlgorithms
                 }
             }
         }
+
+        public static void SelectionSortDescending<T>(this IList<T> list, Comparer<T> comparer = null)
+        {
+            comparer ??= Comparer<T>.Default;
+
+            for (int i = 0; i < list.Count - 1; i++)
+            {
+                int maxElemIndex = list.MaxIndex(
+                    startIndex: i,
+                    endIndex: list.Count - 1,
+                    comparer
+                );
+
+                if (i != maxElemIndex)
+                {
+                    list.Swap(i, maxElemIndex);
+                }
+            }
+        }
     }
 }
