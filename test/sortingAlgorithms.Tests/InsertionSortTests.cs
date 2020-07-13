@@ -64,6 +64,24 @@ namespace sortingAlgorithms.Tests
         }
 
         [Theory]
+        [InlineData(new object[] { new int[] { 6, 5, 3, 1, 8, 7, 2, 4 } })]
+        public void InsertionSortDescendingGivesCorrectOutput(int[] sampleArray)
+        {
+            // arrange
+            int[] arrayForReverseInsertionSort = new int[sampleArray.Length];
+            sampleArray.CopyTo(arrayForReverseInsertionSort, index: 0);
+
+            // act
+            Array.Sort(sampleArray, new Comparison<int>(
+                (i1, i2) => i2.CompareTo(i1))
+            );
+            arrayForReverseInsertionSort.InsertionSortDescending();
+
+            // assert
+            Assert.Equal(sampleArray, arrayForReverseInsertionSort);
+        }
+
+        [Theory]
         [InlineData(20000)]
         public void InsertionSortAscendingInitialANDInsertionSortAscendingAreEquallyFast(int arrSize)
         {
