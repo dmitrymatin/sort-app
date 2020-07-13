@@ -6,7 +6,7 @@ namespace sortingAlgorithms
 {
     public static class InsertionSortExtension
     {
-        public static void InsertionSortAscending<T>(this IList<T> list, Comparer<T> comparer = null)
+        public static void InsertionSortAscendingInitial<T>(this IList<T> list, Comparer<T> comparer = null)
         {
             comparer ??= Comparer<T>.Default;
 
@@ -30,6 +30,29 @@ namespace sortingAlgorithms
                             break;
                         }
                     }
+                }
+            }
+        }
+
+        public static void InsertionSortAscending<T>(this IList<T> list, Comparer<T> comparer = null)
+        {
+            comparer ??= Comparer<T>.Default;
+
+            for (int i = 1; i < list.Count; i++)
+            {
+                if (comparer.Compare(list[i - 1], list[i]) > 0)
+                {
+                    var current = list[i];
+                    var currentIndex = i;
+
+                    int n = currentIndex - 1;
+                    while (n >= 0 && comparer.Compare(current, list[n]) < 0)  
+                    {
+                        list[n + 1] = list[n];
+                        n--;
+                    }
+
+                    list[n + 1] = current;
                 }
             }
         }
