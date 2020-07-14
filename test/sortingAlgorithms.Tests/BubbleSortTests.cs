@@ -112,7 +112,7 @@ namespace sortingAlgorithms.Tests
             var diff = ((descTime - ascTime) / (double)ascTime) * 100;
 
             // assert
-            Assert.InRange(diff, -5, 5);
+            Assert.InRange(diff, -10, 10);
         }
     }
 }
