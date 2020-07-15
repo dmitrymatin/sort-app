@@ -17,5 +17,9 @@ namespace SortApp
             InitializeComponent();
         }
 
+        private void AppForm_Load(object sender, EventArgs e)
+        {
+            dataGridViewTimes.Rows.Add("", 44, 55, 11, 33);
+        }
     }
 }
