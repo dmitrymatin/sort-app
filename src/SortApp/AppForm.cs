@@ -158,6 +158,19 @@ namespace SortApp
             return (mergeSortedArray, sw.ElapsedMilliseconds);
         }
 
+        private (T[] sortedArray, long time) ArraySort<T>(T[] array)
+        {
+            T[] sortedArray = new T[array.Length];
+            array.CopyTo(sortedArray, 0);
+
+            var sw = new Stopwatch();
+            sw.Start();
+            Array.Sort(sortedArray);
+            sw.Stop();
+
+            return (sortedArray, sw.ElapsedMilliseconds);
+        }
+
         private void PerformSorting<T>(IList<T> list)
         {          
             var bubbleSort = BubbleSort(list);
@@ -175,6 +188,12 @@ namespace SortApp
             var mergeSort = MergeSort(list);
             PopulateColumn(dataGridViewData, mergeSort.mergeSortedArray, columnIndex: 4);
             PopulateColumn(dataGridViewTimes, mergeSort.time, columnIndex: 4, rowIndex: 0);
+
+            var builtInSort = ArraySort(list.ToArray());
+            // we do not populate dataGridViewData with standard sort result, only time
+            PopulateColumn(dataGridViewTimes, builtInSort.time, columnIndex: 0, rowIndex: 0);
+
+            
         }
     }
 }
