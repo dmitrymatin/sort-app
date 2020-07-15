@@ -75,7 +75,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.dataGridViewTimes);
             this.splitContainer1.Panel2MinSize = 110;
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 334;
+            this.splitContainer1.SplitterDistance = 300;
             this.splitContainer1.TabIndex = 0;
             // 
             // dataGridView1
@@ -90,7 +90,7 @@
             this.dataGridViewData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewData.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewData.Name = "dataGridView1";
-            this.dataGridViewData.Size = new System.Drawing.Size(800, 334);
+            this.dataGridViewData.Size = new System.Drawing.Size(800, 300);
             this.dataGridViewData.TabIndex = 1;
             // 
             // OriginalColumn
@@ -176,7 +176,7 @@
             //
             this.buttonSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSort.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonSort.Location = new System.Drawing.Point(695, 75);
+            this.buttonSort.Location = new System.Drawing.Point(695, 109);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(93, 25);
             this.buttonSort.TabIndex = 3;
@@ -188,7 +188,7 @@
             // 
             this.checkBoxRandom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBoxRandom.AutoSize = true;
-            this.checkBoxRandom.Location = new System.Drawing.Point(12, 55);
+            this.checkBoxRandom.Location = new System.Drawing.Point(12, 89);
             this.checkBoxRandom.Name = "checkBoxRandom";
             this.checkBoxRandom.Size = new System.Drawing.Size(145, 17);
             this.checkBoxRandom.TabIndex = 4;
@@ -200,7 +200,7 @@
             // 
             this.textBoxArrSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.textBoxArrSize.Enabled = false;
-            this.textBoxArrSize.Location = new System.Drawing.Point(108, 78);
+            this.textBoxArrSize.Location = new System.Drawing.Point(108, 112);
             this.textBoxArrSize.Name = "textBoxArrSize";
             this.textBoxArrSize.Size = new System.Drawing.Size(116, 20);
             this.textBoxArrSize.TabIndex = 5;
@@ -210,7 +210,7 @@
             this.labelArrSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelArrSize.AutoSize = true;
             this.labelArrSize.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.labelArrSize.Location = new System.Drawing.Point(9, 81);
+            this.labelArrSize.Location = new System.Drawing.Point(9, 115);
             this.labelArrSize.Name = "labelArrSize";
             this.labelArrSize.Size = new System.Drawing.Size(93, 13);
             this.labelArrSize.TabIndex = 6;
@@ -221,7 +221,7 @@
             this.buttonGenArr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonGenArr.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonGenArr.Enabled = false;
-            this.buttonGenArr.Location = new System.Drawing.Point(230, 75);
+            this.buttonGenArr.Location = new System.Drawing.Point(230, 109);
             this.buttonGenArr.Name = "buttonGenArr";
             this.buttonGenArr.Size = new System.Drawing.Size(93, 25);
             this.buttonGenArr.TabIndex = 7;
