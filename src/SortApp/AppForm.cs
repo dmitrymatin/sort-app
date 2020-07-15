@@ -21,5 +21,19 @@ namespace SortApp
         {
             dataGridViewTimes.Rows.Add("", 44, 55, 11, 33);
         }
+        private void checkBoxRandom_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGenArr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSort_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

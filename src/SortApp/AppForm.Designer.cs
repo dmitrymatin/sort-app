@@ -41,6 +41,11 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonSort = new System.Windows.Forms.Button();
+            this.checkBoxRandom = new System.Windows.Forms.CheckBox();
+            this.textBoxArrSize = new System.Windows.Forms.TextBox();
+            this.labelArrSize = new System.Windows.Forms.Label();
+            this.buttonGenArr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -61,7 +66,12 @@
             this.splitContainer1.Panel1.Controls.Add(this.dataGridViewData);
             // 
             // splitContainer1.Panel2
-            // 
+            //
+            this.splitContainer1.Panel2.Controls.Add(this.buttonGenArr);
+            this.splitContainer1.Panel2.Controls.Add(this.labelArrSize);
+            this.splitContainer1.Panel2.Controls.Add(this.textBoxArrSize);
+            this.splitContainer1.Panel2.Controls.Add(this.checkBoxRandom);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonSort);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridViewTimes);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 326;
@@ -160,6 +170,63 @@
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn5.HeaderText = "Merge Sort Time";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            //
+            // buttonSort
+            //
+            this.buttonSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSort.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonSort.Location = new System.Drawing.Point(695, 83);
+            this.buttonSort.Name = "buttonSort";
+            this.buttonSort.Size = new System.Drawing.Size(93, 25);
+            this.buttonSort.TabIndex = 3;
+            this.buttonSort.Text = "Сортировать";
+            this.buttonSort.UseVisualStyleBackColor = false;
+            this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
+            // 
+            // checkBoxRandom
+            // 
+            this.checkBoxRandom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.checkBoxRandom.AutoSize = true;
+            this.checkBoxRandom.Location = new System.Drawing.Point(12, 63);
+            this.checkBoxRandom.Name = "checkBoxRandom";
+            this.checkBoxRandom.Size = new System.Drawing.Size(145, 17);
+            this.checkBoxRandom.TabIndex = 4;
+            this.checkBoxRandom.Text = "Случайные числа (авто)";
+            this.checkBoxRandom.UseVisualStyleBackColor = true;
+            this.checkBoxRandom.CheckedChanged += new System.EventHandler(this.checkBoxRandom_CheckedChanged);
+            // 
+            // textBoxArrSize
+            // 
+            this.textBoxArrSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxArrSize.Enabled = false;
+            this.textBoxArrSize.Location = new System.Drawing.Point(108, 86);
+            this.textBoxArrSize.Name = "textBoxArrSize";
+            this.textBoxArrSize.Size = new System.Drawing.Size(116, 20);
+            this.textBoxArrSize.TabIndex = 5;
+            // 
+            // labelArrSize
+            // 
+            this.labelArrSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelArrSize.AutoSize = true;
+            this.labelArrSize.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelArrSize.Location = new System.Drawing.Point(9, 89);
+            this.labelArrSize.Name = "labelArrSize";
+            this.labelArrSize.Size = new System.Drawing.Size(93, 13);
+            this.labelArrSize.TabIndex = 6;
+            this.labelArrSize.Text = "Размер массива";
+            // 
+            // buttonGenArr
+            // 
+            this.buttonGenArr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonGenArr.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGenArr.Enabled = false;
+            this.buttonGenArr.Location = new System.Drawing.Point(230, 83);
+            this.buttonGenArr.Name = "buttonGenArr";
+            this.buttonGenArr.Size = new System.Drawing.Size(93, 25);
+            this.buttonGenArr.TabIndex = 7;
+            this.buttonGenArr.Text = "Создать";
+            this.buttonGenArr.UseVisualStyleBackColor = false;
+            this.buttonGenArr.Click += new System.EventHandler(this.buttonGenArr_Click);
             // 
             // Form1
             // 
@@ -172,6 +239,7 @@
             this.Load += new System.EventHandler(this.AppForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
@@ -195,6 +263,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button buttonSort;
+        private System.Windows.Forms.CheckBox checkBoxRandom;
+        private System.Windows.Forms.TextBox textBoxArrSize;
+        private System.Windows.Forms.Label labelArrSize;
+        private System.Windows.Forms.Button buttonGenArr;
     }
 }
 
