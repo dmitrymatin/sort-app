@@ -228,6 +228,31 @@
             this.buttonGenArr.Text = "Создать";
             this.buttonGenArr.UseVisualStyleBackColor = false;
             this.buttonGenArr.Click += new System.EventHandler(this.buttonGenArr_Click);
+            //
+            // backgroundWorkerBubbleSort
+            // 
+            this.backgroundWorkerBubbleSort.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerBubbleSort_DoWork);
+            this.backgroundWorkerBubbleSort.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerBubbleSort_RunWorkerCompleted);
+            // 
+            // backgroundWorkerInsertionSort
+            // 
+            this.backgroundWorkerInsertionSort.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerInsertionSort_DoWork);
+            this.backgroundWorkerInsertionSort.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerInsertionSort_RunWorkerCompleted);
+            // 
+            // backgroundWorkerSelectionSort
+            // 
+            this.backgroundWorkerSelectionSort.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerSelectionSort_DoWork);
+            this.backgroundWorkerSelectionSort.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerSelectionSort_RunWorkerCompleted);
+            // 
+            // backgroundWorkerMergeSort
+            // 
+            this.backgroundWorkerMergeSort.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerMergeSort_DoWork);
+            this.backgroundWorkerMergeSort.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerMergeSort_RunWorkerCompleted);
+            // 
+            // backgroundWorkerBuiltInSort
+            // 
+            this.backgroundWorkerBuiltInSort.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerBuiltInSort_DoWork);
+            this.backgroundWorkerBuiltInSort.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerBuiltInSort_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -269,6 +294,11 @@
         private System.Windows.Forms.TextBox textBoxArrSize;
         private System.Windows.Forms.Label labelArrSize;
         private System.Windows.Forms.Button buttonGenArr;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerBubbleSort;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerInsertionSort;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerSelectionSort;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerMergeSort;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerBuiltInSort;
     }
 }
 
