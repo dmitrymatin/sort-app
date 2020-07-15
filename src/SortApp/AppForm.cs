@@ -19,6 +19,11 @@ namespace SortApp
             InitializeComponent();
         }
 
+        private void AppForm_Load(object sender, System.EventArgs e)
+        {
+            dataGridViewTimes.Rows.Add(1);
+        }
+
         private void checkBoxRandom_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxRandom.Checked)
@@ -168,7 +173,7 @@ namespace SortApp
         }
 
         private void PerformSorting<T>(IList<T> list)
-        {          
+        {
             var bubbleSort = BubbleSort(list);
             PopulateColumn(dataGridViewData, bubbleSort.bubbleSortedArray, columnIndex: 1);
             PopulateColumn(dataGridViewTimes, bubbleSort.time, columnIndex: 1, rowIndex: 0);
@@ -189,7 +194,38 @@ namespace SortApp
             // we do not populate dataGridViewData with standard sort result, only time
             PopulateColumn(dataGridViewTimes, builtInSort.time, columnIndex: 0, rowIndex: 0);
 
-            
+            HightlightExtremeResultTimes();
+        }
+
+        private void HightlightExtremeResultTimes()
+        {
+            if (long.TryParse(dataGridViewTimes[0, 0].Value.ToString(), out long minTime) && long.TryParse(dataGridViewTimes[0,0].Value.ToString(), out long maxTime))
+            {
+                DataGridViewCell cellMin = dataGridViewTimes[0, 0];
+                DataGridViewCell cellMax = dataGridViewTimes[0, 0];
+                for (int i = 1; i < dataGridViewTimes.Columns.Count; i++)
+                {
+                    if (long.TryParse(dataGridViewTimes[i, 0].Value.ToString(), out long time))
+                    {
+                        if (time < minTime)
+                        {
+                            minTime = time;
+                            cellMin = dataGridViewTimes[i, 0];
+                        }
+                        if (time > maxTime)
+                        {
+                            maxTime = time;
+                            cellMax = dataGridViewTimes[i, 0];
+                        }
+                    }
+                }
+
+                if (!object.ReferenceEquals(cellMin, cellMax))
+                {
+                    cellMin.Style.ForeColor = Color.Green;
+                    cellMax.Style.ForeColor = Color.Red;
+                }
+            }
         }
     }
 }

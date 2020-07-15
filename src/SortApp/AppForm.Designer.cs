@@ -177,7 +177,7 @@
             //
             this.buttonSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSort.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonSort.Location = new System.Drawing.Point(695, 109);
+            this.buttonSort.Location = new System.Drawing.Point(810, 109);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(93, 25);
             this.buttonSort.TabIndex = 3;
@@ -241,6 +241,7 @@
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
+            this.Load += AppForm_Load;
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
