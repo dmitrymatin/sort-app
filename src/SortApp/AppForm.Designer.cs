@@ -96,31 +96,31 @@
             // OriginalColumn
             // 
             this.OriginalColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.OriginalColumn.HeaderText = "Original Array";
+            this.OriginalColumn.HeaderText = "Массив для сортировки";
             this.OriginalColumn.Name = "OriginalColumn";
             // 
             // BubbleColumn
             // 
             this.BubbleColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.BubbleColumn.HeaderText = "Bubble Sort";
+            this.BubbleColumn.HeaderText = "Сортировка пузырьком";
             this.BubbleColumn.Name = "BubbleColumn";
             // 
             // InsertionColumn
             // 
             this.InsertionColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.InsertionColumn.HeaderText = "Insertion Sort";
+            this.InsertionColumn.HeaderText = "Сортировка вставками";
             this.InsertionColumn.Name = "InsertionColumn";
             // 
             // SelectionColumn
             // 
             this.SelectionColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SelectionColumn.HeaderText = "Selection Sort";
+            this.SelectionColumn.HeaderText = "Сортировка выбором";
             this.SelectionColumn.Name = "SelectionColumn";
             // 
             // MergeColumn
             // 
             this.MergeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MergeColumn.HeaderText = "Merge Sort";
+            this.MergeColumn.HeaderText = "Сортировка слиянием";
             this.MergeColumn.Name = "MergeColumn";
             // 
             // dataGridView2
@@ -145,31 +145,31 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Original Array";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Сортировка .NET BCL";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Bubble Sort Time";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Сортировка пузырьком, время (мс)";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Insertion Sort Time";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Сортировка вставками, время (мс)";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Selection Sort Time";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Сортировка выбором, время (мс)";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Merge Sort Time";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Сортировка слиянием, время (мс)";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             //
             // buttonSort
@@ -236,7 +236,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sorting App";
             this.Load += new System.EventHandler(this.AppForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
