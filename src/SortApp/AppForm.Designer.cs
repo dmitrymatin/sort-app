@@ -76,6 +76,7 @@
             this.splitContainer1.Panel2MinSize = 110;
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 300;
+            this.splitContainer1.SplitterWidth = 14;
             this.splitContainer1.TabIndex = 0;
             // 
             // dataGridView1
@@ -139,7 +140,7 @@
             this.dataGridViewTimes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewTimes.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewTimes.Name = "dataGridView2";
-            this.dataGridViewTimes.Size = new System.Drawing.Size(800, 45);
+            this.dataGridViewTimes.Size = new System.Drawing.Size(800, 56);
             this.dataGridViewTimes.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
