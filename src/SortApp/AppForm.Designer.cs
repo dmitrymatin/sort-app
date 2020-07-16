@@ -105,24 +105,28 @@
             this.BubbleColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.BubbleColumn.HeaderText = "Сортировка пузырьком";
             this.BubbleColumn.Name = "BubbleColumn";
+            this.BubbleColumn.ReadOnly = true;
             // 
             // InsertionColumn
             // 
             this.InsertionColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.InsertionColumn.HeaderText = "Сортировка вставками";
             this.InsertionColumn.Name = "InsertionColumn";
+            this.InsertionColumn.ReadOnly = true;
             // 
             // SelectionColumn
             // 
             this.SelectionColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.SelectionColumn.HeaderText = "Сортировка выбором";
             this.SelectionColumn.Name = "SelectionColumn";
+            this.SelectionColumn.ReadOnly = true;
             // 
             // MergeColumn
             // 
             this.MergeColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MergeColumn.HeaderText = "Сортировка слиянием";
             this.MergeColumn.Name = "MergeColumn";
+            this.MergeColumn.ReadOnly = true;
             // 
             // dataGridView2
             // 
